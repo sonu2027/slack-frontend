@@ -17,7 +17,9 @@ function NavbarMobile() {
   }
 
   window.addEventListener("click", () => {
-    setIsOpen(!isOpen);
+    if(isOpen){
+      setIsOpen(!isOpen);
+    }
   })
 
   return (
@@ -25,7 +27,7 @@ function NavbarMobile() {
 
       {
         !isOpen && <button
-          className="p-2 text-gray-700 hover:text-gray-900 focus:outline-none"
+          className="p-2 text-gray-700 hover:text-gray-900 focus:outline-none lg:text-[#F5F0EC]"
           onClick={toggleMenu}
         >
           <RxHamburgerMenu />

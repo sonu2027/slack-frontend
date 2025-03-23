@@ -4,6 +4,8 @@ import ToDo from './components/ToDo.jsx'
 import Body from "./components/Body.jsx"
 import CompanyLogo from './components/CompanyLogo.jsx'
 import Footer from './components/Footer.jsx'
+import Cookies from './components/Cookies.jsx'
+import HI from './components/HI.jsx'
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Body/>
       <CompanyLogo/>
       <Footer/>
+      <Cookies/>
+      <HI/>
     </div>
   )
 }

@@ -4,8 +4,8 @@ import googleLogo from "../assets/google-logo.webp"
 
 function Body() {
   return (
-    <div className='sm:flex sm:justify-between sm:items-center mr-2 sm:ml-2 sm:mr-6'>
-      <div className='flex flex-col gap-y-3'>
+    <div className='flex gap-y-8 flex-col-reverse sm:flex-row sm:justify-between sm:items-center mr-2 sm:ml-2 sm:mr-6 mt-8'>
+      <div className='flex flex-col gap-y-3 items-center sm:items-start'>
         <p className='text-2xl sm:text-4xl font-bold'>Slack is where the future works</p>
         <div>
           <p className='font-bold'>Transform the way you work with one place for</p>
