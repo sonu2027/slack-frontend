@@ -26,12 +26,16 @@ function NavbarMobile() {
     <div className="relative">
 
       {
-        !isOpen && <button
-          className="p-2 text-gray-700 hover:text-gray-900 focus:outline-none lg:text-[#F5F0EC]"
+        !isOpen && 
+        <>
+        <button
+          className="lg:hidden p-2 text-gray-700 hover:text-gray-900 focus:outline-none"
           onClick={toggleMenu}
         >
           <RxHamburgerMenu />
         </button>
+        <p className='hidden lg:block text-[#F5F0EC]'>.</p>
+        </>
       }
       <div onClick={(e) => e.stopPropagation()}
         className={`absolute z-10 left-0 w-48 h-[100vh] bg-white border border-gray-200 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform ${isOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}
